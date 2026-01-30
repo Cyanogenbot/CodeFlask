@@ -81,6 +81,7 @@ export default class CodeFlask {
   createLineNumbers () {
     this.elLineNumbers = this.createElement('div', this.elWrapper)
     this.elLineNumbers.classList.add('codeflask__lines')
+    this.elLineNumbers.setAttribute('id', this.opts.areaId)
     this.setLineNumber()
   }
 
